@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row" id="header">
+            <div class="col-11"></div>
+            <div class="col-1 menu" id="myCart" ><i id="cartIcon" class="bi bi-cart2 d-inline d-lg-none"></i><span class="d-none d-lg-inline">My Cart</span> ( <span id="productQty"></span> )
+                <table id="tableDetails">
+                </table>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+        <div class="row">
+            <div id="image" class="col-lg-7 col-md-6 col-sm-12">
+                <div id="mainImage"></div>
+            </div>
+            <div id="details" class="col-lg-5 col-md-6 col-sm-12">
+                <!-- This div is for product details. -->
+                <h4 id="title"></h4>
+                <hr id="lineTop"><p class="price">$ <span id="price"></span></p><hr> 
+                <p class="content" id="description"></p>
+                <p class="content">SIZE<span style="color:#C90000">*</span> <span style="color:#222222" id="sizeChar"></span></p>
+                <p class="btn-group" role="group" id="sizeButtonGroup"></p>
+                <p><button id="addToCart" class="fade1">ADD TO CART</button></p>
+            </div>
+
+        </div>
+    </div>
+  </body>
+</html>

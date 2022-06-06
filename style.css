@@ -56,7 +56,7 @@ hr {
   display: none;
 }
 
-#myCart:hover, #myCart:active{
+#myCart:hover, #myCart:active, #myCart:focus{
   text-align: center;
   border-style: solid;
   border-width: 1px;
@@ -65,7 +65,7 @@ hr {
   background-color: white;
 }
 
-#myCart:hover #tableDetails, #myCart:active #tableDetails{
+#myCart:hover #tableDetails, #myCart:active #tableDetails, #myCart:focus #tableDetails{
   display: block;
   position: absolute;
   right:0;
